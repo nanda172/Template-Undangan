@@ -76,3 +76,10 @@ body {
     cursor: pointer;
     border-radius: 8px;
 }
+
+@media screen and (max-width:600px) {
+    .pengantin {
+        font-size: 3em;
+    }
+}
+
