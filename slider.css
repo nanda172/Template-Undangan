@@ -1,0 +1,78 @@
+/* tempat font */
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+/* font-family: 'Style Script', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600&family=Style+Script&display=swap');
+/* font-family: 'Quicksand', sans-serif; */
+/* end font */
+
+
+
+:root {
+    --white: #eeeeeef5;
+    --gold: #d4af37;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.cover {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.308), rgba(255, 255, 255, 0.301)), url(img/1.jpg);
+    background-size: cover;
+    color: var(--gold);
+}
+
+/* .transition.slider .cover1 {
+    background-color: burlywood;
+    animation: slider 0.5s ease-in-out;
+} */
+
+.transition.slider.open .cover1 {
+    background-color: burlywood;
+    animation: open 0.5s ease-in-out;
+}
+
+@keyframes open {
+    from {
+        top: 0;
+    }
+    to {
+        top: -100vh;
+    }
+}
+
+
+.cover .pengantin {
+    font-family: 'Style Script', cursive;
+    font-size: 4em;
+}
+
+.cover #submit {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: 1.5px solid var(--gold);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: large;
+    color: rgba(0, 0, 0, 0.836);
+    cursor: pointer;
+    border-radius: 8px;
+}

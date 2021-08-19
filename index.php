@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Slider-Dua</title>
+</head>
+<body>
+
+    <audio id="audio">
+      <source src="audio/1.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="transition slider" id="cover">
+        <div class="cover cover1">
+            <h1>Pawiwahan</h1>
+            <h1 class="pengantin">Men & Woman</h1>
+            <p>Kepada Yth:</p>
+            <h2><?php echo $_GET["to"]; ?></h2>
+            <input type="submit" id="submit" value="Lihat Undangan">
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="slide1"></div>
+        <div class="slide2"></div>
+        <div class="slide3"></div>
+        <div class="slide4"></div>
+    </div>
+
+    <div class="tanggal-h">
+        <p>Pawiwahan</p>
+        <h1>Men & Woman</h1>
+        <p>Senin, 9 Maret 2021</p>
+        <div class="countdown">
+            <p id="demo" class="bg"></p>
+            <p id="demo-jam" class="bg"></p>
+            <p id="demo-menit" class="bg"></p>
+            <p id="demo-detik" class="bg"></p>
+            <script>var countDownDate = new Date("Sep 9, 2021 11:47:25").getTime();
+
+                // Memperbarui hitungan mundur setiap 1 detik
+                var x = setInterval(function() {
+                
+                  // Untuk mendapatkan tanggal dan waktu hari ini
+                var now = new Date().getTime();
+                    
+                  // Temukan jarak antara sekarang dan tanggal hitung mundur
+                var distance = countDownDate - now;
+                    
+                  // Perhitungan waktu untuk hari, jam, menit dan detik
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    
+                  // Keluarkan hasil dalam elemen dengan id = "demo"
+                    document.getElementById("demo").innerHTML = days + " Hari ";
+                    document.getElementById("demo-jam").innerHTML = hours + " Jam "; 
+                    document.getElementById("demo-menit").innerHTML = minutes + " Min "; 
+                    document.getElementById("demo-detik").innerHTML = seconds + " Sec "; 
+                
+                        
+                  // Jika hitungan mundur selesai, tulis beberapa teks 
+                }, 1000);</script>
+        </div>
+    </div>
+
+
+    <div class="mempelai">
+      <div class="salam">
+        <h2>Om Swastyastu</h2>
+        <p>Atas rahmat Tuhan Yang Maha Esa, maka perkenankan kami mengundang Bapak/Ibu/Saudara/i pada resepsi Pernikahan putra-putri kami. </p>
+      </div>
+      <div class="mempelai-pria">
+        <img src="img/pria.jpg" alt="mempelai-pria" width="250px" height="250px">
+        <h2>I WAYAN OSAMA BINLADEN</h2>
+        <p class="keluarga-mempelai">Putra dari pasangan
+          <br>
+          I Made Kerta
+          <br>
+          &
+          <br>
+          Ni Nyoman Kerti
+        </p>
+        <p class="alamat">
+          Br. Abiansemal, Desa Abiansemal, Kab. Badung-Bali.
+        </p>
+        <h1 class="dan">&</h1>
+      </div>
+
+      <div class="mempelai-wanita">
+        <img src="img/wanita.jpg" alt="mempelai-pria" width="250px" height="250px">
+        <h2>NI LUH GUSTIANA DEWI</h2>
+        <p class="keluarga-mempelai">Putra dari pasangan
+          <br>
+          I Wayan Gustata
+          <br>
+          &
+          <br>
+          Ni Putu Ariyanti
+        </p>
+        <p class="alamat">
+          Br. Gunung, Desa Bentulu, Kab. Gianyar-Bali.
+        </p>
+      </div>
+    </div>
+    <!-------------------------------------------------------------------------------->
+    
+    <div class="puncak-acara">
+      <div class="hari-acara">
+        <h1>Resepsi</h1>
+        <p class="gold">Senin, 28 Juli 2021</p>
+        <p>18.00 Wita - 22.00 Wita</p>
+        <p class="gold">Br. Abiansemal, Desa Abiansemal, Kab. Badung-Bali.</p>
+      </div>
+
+      <div class="peta">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.417686625605!2d115.16459831416586!3d-8.746711891677915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2441650216933%3A0xdf71da6ddd7bcc1f!2sBandar%20Udara%20Internasional%20Ngurah%20Rai!5e0!3m2!1sid!2sid!4v1629337009549!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <a href="#">Lihat Peta</a>
+      </div>
+
+      <div class="protokol-kesehatan">
+        <p>Jangan ragu untuk datang, kami sudah berkoordinasi dengan semua pihak terkait pencegahan penularan COVID-19. Acara kami akan mengikuti segala prosedur protokol kesehatan untuk mencegah penularan COVID-19.</p>
+        <div class="wadah-prokes">
+          <div class="ke 1">
+            <img src="img/corona-protocol/face-mask.png" alt="face-mask" height="50px" width="50px">
+            <h4>Gunakan Masker</h4>
+          </div>
+          <div class="ke 2">
+            <img src="img/corona-protocol/hand-sanitizer (1).png" alt="face-mask" height="50px" width="50px">
+            <h4>Cuci Tangan</h4>
+          </div>
+          <div class="ke 3">
+            <img src="img/corona-protocol/avoid-crowds.png" alt="face-mask" height="50px" width="50px">
+            <h4>Hindari Kerumunan</h4>
+          </div>
+          <div class="ke 4">
+            <img src="img/corona-protocol/handshake.png" alt="face-mask" height="50px" width="50px">
+            <h4>Tidak Berjabat Tangan</h4>
+          </div>
+          <div class="ke 5">
+            <img src="img/corona-protocol/hydroalcoholic-gel.png" alt="face-mask" height="50px" width="50px">
+            <h4>Gunakan Hand Sanitizer</h4>
+          </div>
+          <div class="ke 6">
+            <img src="img/corona-protocol/social-distancing.png" alt="face-mask" height="50px" width="50px">
+            <h4>Jaga Jarak</h4>
+          </div>
+        </div>
+      </div>
+      <!-------------------------- end prokes -->
+
+      <!-------------------------- doa -->
+      <div class="doa">
+        <p>“Grbhnāmi te saubhagatvāya hastam, Mayā patyā jaradastir yathāsah, Bhago aryamā savitā puramdhir, Mahyam tvādurgārhapatyāya devāh”
+
+          Dalam sebuah pernikahan kalian disatukan demi sebuah kebahagiaan dengan janji hati untuk saling membahagiakan. Bersamaku engkau akan hidup selamanya karena Tuhan pasti akan memberikan karunia sebagai pelindung dan saksi dalam pernikahan ini. Untuk itulah kalian dipersatukan dalam satu keluarga
+          <br>
+          <br>
+          ( Rgveda : X.85.36 )</p>
+      </div>
+
+      <div class="ucapan-terimakasih">
+        <p class="ucapan">Merupakan sebuah kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu. Atas kehadirannya kami ucapkan terima kasih. </p>
+        <p class="ucapan-keluarga">
+          <br>
+          Kami Yang Berbahagia
+          <br>
+          Keluarga </p>
+          <div class="ucapan-orang-tua">
+            <div class="satu">
+              I Made Susila
+              <br>
+              &
+              <br>
+              Ni Nengah Suartini
+            </div>
+            <div class="dua">
+              I Made Susila
+              <br>
+              &
+              <br>
+              Ni Nengah Suartini
+            </div>
+          </div>
+          <h2 class="penutup">Om Shanti, Shanti, Shanti Om</h2>
+      </div>
+    </div>
+<!-- =========================================================================== End End -->
+
+
+<!-- ============================== Gallery ====================================== -->
+<div class="gallery">
+  <div class="video">
+  </div>
+  <div class="hero">
+
+  </div>
+
+  <!-- --2--- -->
+  <div class="gallery-dua">
+    <div class="image1"></div>
+    <div class="image2"></div>
+    <div class="image3"></div>
+    <div class="image4"></div>
+    <div class="image5"></div>
+    <div class="image6"></div>
+    <div class="image7"></div>
+    <div class="image8"></div>
+  </div>
+  <!-- --end2--- -->
+</div>
+<!-- ============================= end Galerry =================================== -->
+
+
+
+<!-- -------------------------------------- footer ------------------------------ -->
+<footer>
+  <p>undanganonlinebali.com</p>
+  <br>
+  <img src="img/corona-protocol/face-mask.png" alt="face-mask" width="50px" height="50px">
+  <br>
+  <br>
+  <p>copyright</p>
+  <br>
+  <h3>Bruno Mars - Keep The Door Open</h3>
+</footer>
+<!-- ==================================== end footer ============================ -->
+<script src="script.js"></script>    
+</body>
+</html>
