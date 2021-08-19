@@ -405,11 +405,11 @@ footer {
 
 @media screen and (max-width:600px) {
     .tanggal-h .nama-mempelai {
-        font-size: 3em;
+        font-size: 2em;
+        color: var(--gold);
     }
 
     footer .lagu {
         font-size: 1em;
     }
 }
-
